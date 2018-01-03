@@ -1,6 +1,3 @@
+GPIO Tutorial
 
-Project {#index}
-===================
-
-
-This is an example project.
+This project serves as a GPIO introduction to the STM32
