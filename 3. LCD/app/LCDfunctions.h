@@ -1,97 +1,4 @@
-/***************************************************************************************************************************
-* - The address counter (AC) assigns addresses to both DDRAM and CGRAM.         
-*                 LCD Command
-*
-*             Cursor Home
-* - Display data RAM (DDRAM) stores the information we send to LCD in ASCII Code.
-* - Using CGRAM memory the user can “build” and store their own letters.      
-*  RS  R/W DB7 DB6 DB5 DB4 DB3 DB2 DB1 DB0
-*  === === === === === === === === === ===
-*   0   0   0   0   0   0   0   0   1   * 
-*  Returns the cursor to the home position (Address 0). Returns display to its original state if it was shifted.
-*  Sets the address counter to DD RAM location 0 in the address counter. 
-*
-*
-*               Clear Display
-*  RS  R/W DB7 DB6 DB5 DB4 DB3 DB2 DB1 DB0
-*  === === === === === === === === === ===
-*   0   0   0   0   0   0   0   0   0   1 
-*  Clears all display and returns the cursor to the home position (Address 0). 
-*
-*
-*             Entry Mode Set
-*  RS  R/W DB7 DB6 DB5 DB4 DB3 DB2 DB1 DB0
-*  === === === === === === === === === ===
-*   0   0   0   0   0   0   0   1  I/D  S 
-*  Sets the effect of subsequent DD RAM read or write operations. Sets the cursor move direction and specifies or not to shift the display.
-*     I/D: increment (I/D = 1) or decrement (I/D = 0) the address counter after subsequent DD RAM read or write operations. 
-*       S: S = 1 the display will be shifted to the left (if I/D = 1) or right (if I/D = 0) on subsequent DD RAM write operations. 
-*          This makes it looks as if the cursor stands still and the display moves when each character is written to the DD RAM. 
-*          If S = 0 the display will not shift on subsequent DD RAM write operations. 
-*
-*             Display ON/OFF
-*  RS  R/W DB7 DB6 DB5 DB4 DB3 DB2 DB1 DB0
-*  === === === === === === === === === ===
-*   0   0   0   0   0   0   1   D   C   B 
-*  Controls display of characters and cursor. 
-*      D: The display is ON when D = 1 and OFF when D = 0. The DD RAM contents remain unchanged.
-*      C: The cursor is displayed when C = 1 and is not displayed when C = 0.
-*         The cursor is displayed as 5 dots in the 8th line when the 5 x 7 dot character font is 
-*         selected and as 5 dots in the 11th line when the 5 x 10 dot character font is selected.
-*      B: The character at the the cursor position blinks when B = 1.
-*      Blinking is performed by switching between all blank dots and the display character every 409.6 ms. 
-*
-*
-*           Cursor and Display Shift
-*  RS  R/W DB7 DB6 DB5 DB4 DB3 DB2 DB1 DB0
-*  === === === === === === === === === ===
-*   0   0   0   0   0   1  S/C R/L  *   * 
-*  Moves the cursor and shifts the display without changing DD RAM contents 
-*      S/C R/L                                          
-*      === ===                                          
-*       0   0   Shifts the cursor position to the left 
-*               (Address Counter is decremented by 1)   
-*       0   1   Shifts the cursor position to the right
-*               (Address Counter is incremented by 1)  
-*       1   0   Shifts the entire display to the left  
-*               The cursor follows the display shift   
-*       1   1   Shifts the entire display to the right 
-*               The cursor follows the display shift
-*
-*
-*       Function Set
-*  RS  R/W DB7 DB6 DB5 DB4 DB3 DB2 DB1 DB0
-*  === === === === === === === === === ===
-*   0   0   0   0   1   DL  N   F   *   * 
-*  Sets interface data length (DL), number of display lines (N) and character font (F) 
-*     DL: Sets interface data length 
-*        Data sent or received in 8 bit lengths (DB7-DB0) when DL = 1
-*        Data sent or received in 4 bit lengths (DB7-DB4) when DL = 0
-*        When the 4 bit length is selected, data must be sent or received in pairs of 4-bits each. The most-significant 4 bits are sent or received first. 
-*     N: Sets number of display lines
-*     F: Sets character font
-*
-*    display Character  Duty                             
-*  N F  lines    Font    Factor Remarks                    
-*  === ======= ========= ====== =======                    
-*  0 0    1    5x 7 dots  1/8    -                         
-*  0 1    1    5x10 dots  1/11   -                         
-*  1 *    2    5x 7 dots  1/16  Cannot display 2 lines with
-*                               5x10 dot character font    
-*
-
-
-Set DDRAM Address
-
-RS  R/W DB7 DB6 DB5 DB4 DB3 DB2 DB1 DB0
-=== === === === === === === === === ===
- 0   0   1   A   A   A   A   A   A   A 
-
-Sets the DD RAM address. Subsequent read or writes refer to the DD RAM. 
-*/
-
 #include "stm32f0xx.h"
-
 #define TimeDelayBeforeEnableSet  800
 #define TimeDelayBeforeDisableSet 1600
 #define TimeDelayAfterDisableSet  1600
@@ -100,7 +7,7 @@ Sets the DD RAM address. Subsequent read or writes refer to the DD RAM.
 #define CLEARLCD    0b00000001
 #define CURSORHOME  0b00000010
 #define ENTRYMODE   0b00000110
-#define DISPLAYMODE 0b00000110
+#define DISPLAYMODE 0b00001110
 #define FUNCTIONSET 0b00111000
 #define TWOLINES    0b11000000
 

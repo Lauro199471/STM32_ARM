@@ -1,0 +1,421 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x5015dd39, pid=13220, tid=16844
+#
+# JRE version: Java(TM) SE Runtime Environment (7.0_71-b14) (build 1.7.0_71-b14)
+# Java VM: Java HotSpot(TM) Client VM (24.71-b01 mixed mode windows-x86 )
+# Problematic frame:
+# C  0x5015dd39
+#
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x11398000):  VMThread [stack: 0x120b0000,0x121b0000] [id=16844]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000058
+
+Registers:
+EAX=0x11398130, EBX=0x501b8678, ECX=0x00000000, EDX=0x113a7b70
+ESP=0x121af540, EBP=0x121af558, ESI=0x1a2f189c, EDI=0x1f546e74
+EIP=0x5015dd39, EFLAGS=0x00010206
+
+Top of Stack: (sp=0x121af540)
+0x121af540:   11398130 113a7b70 1f546e74 1a2f1850
+0x121af550:   11398130 01889fd0 121af568 5015e190
+0x121af560:   1f546e74 2b7041f8 121af584 5015ddcc
+0x121af570:   00000001 50187e17 1f546e60 50187492
+0x121af580:   00000000 121af5a4 27408e54 2b7041fc
+0x121af590:   19d95780 19d95780 27442300 1a2f85cc
+0x121af5a0:   19de8dc0 121af5b0 27442adb 1f4bbd00
+0x121af5b0:   121af5cc 274487e8 00000001 27409756 
+
+Instructions: (pc=0x5015dd39)
+0x5015dd19:   00 00 c6 45 ff 00 e8 dc 55 ff ff 83 c4 08 85 c0
+0x5015dd29:   75 1f 8b 45 f8 85 c0 74 18 8b 56 bc 8b 08 52 50
+0x5015dd39:   8b 41 58 ff d0 8d 4d ff 51 e8 09 56 ff ff 83 c4
+0x5015dd49:   04 8d 4e e0 e8 1e 08 02 00 8b 46 d4 8b 08 50 51 
+
+
+Register to memory mapping:
+
+EAX=
+[error occurred during error reporting (printing register info), id 0xc0000005]
+
+Stack: [0x120b0000,0x121b0000],  sp=0x121af540,  free space=1021k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  0x5015dd39
+C  0x5015e190
+C  0x5015ddcc
+C  0x27408e54
+C  0x27442adb
+C  0x274487e8
+C  0x50185e16
+C  0x50177813
+C  0x501a622b
+C  0x5019825a
+C  0x5019832d
+C  0x50194c86
+C  0x50194cf1
+C  [ntdll.dll+0x71cd6]
+C  [ntdll.dll+0x3f30f]
+C  [ntdll.dll+0x37e73]
+C  [ntdll.dll+0x3141c]
+C  [KERNEL32.DLL+0x13cc3]
+C  [MSVCR100.dll+0x27997]
+C  [MSVCR100.dll+0x27ab0]
+C  [MSVCR100.dll+0x27b1d]
+V  [jvm.dll+0x140952]
+V  [jvm.dll+0x16909d]
+V  [jvm.dll+0x1684b1]
+V  [jvm.dll+0x1688c7]
+V  [jvm.dll+0x168ac2]
+V  [jvm.dll+0x1a80f9]
+C  [MSVCR100.dll+0x5c556]
+C  [MSVCR100.dll+0x5c600]
+C  [KERNEL32.DLL+0x18744]
+C  [ntdll.dll+0x6582d]
+C  [ntdll.dll+0x657fd]
+
+VM_Operation (0x0019fac0): Exit, mode: safepoint, requested by thread 0x021dcc00
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x166ae800 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=4444, stack(0x16b00000,0x16c00000)]
+  0x166a9000 JavaThread "AWT-Shutdown" [_thread_blocked, id=11400, stack(0x158b0000,0x159b0000)]
+  0x16460400 JavaThread "pool-1-thread-10" [_thread_blocked, id=7412, stack(0x2d280000,0x2d380000)]
+  0x16461c00 JavaThread "pool-1-thread-9" [_thread_blocked, id=11936, stack(0x2cf40000,0x2d040000)]
+  0x1645f000 JavaThread "pool-1-thread-8" [_thread_blocked, id=15356, stack(0x2ce00000,0x2cf00000)]
+  0x1645b400 JavaThread "pool-1-thread-7" [_thread_blocked, id=1580, stack(0x2ccc0000,0x2cdc0000)]
+  0x149c5800 JavaThread "pool-1-thread-6" [_thread_blocked, id=12332, stack(0x2cb80000,0x2cc80000)]
+  0x149c4400 JavaThread "pool-1-thread-5" [_thread_blocked, id=15020, stack(0x2ca40000,0x2cb40000)]
+  0x149c5000 JavaThread "pool-1-thread-4" [_thread_blocked, id=8168, stack(0x2c940000,0x2ca40000)]
+  0x149c4000 JavaThread "pool-1-thread-3" [_thread_blocked, id=5668, stack(0x2c840000,0x2c940000)]
+  0x160a2000 JavaThread "pool-1-thread-2" [_thread_blocked, id=16840, stack(0x2c190000,0x2c290000)]
+  0x1609bc00 JavaThread "pool-1-thread-1" [_thread_blocked, id=12836, stack(0x2bc40000,0x2bd40000)]
+  0x160a0c00 JavaThread "Thread-47" daemon [_thread_in_native, id=8204, stack(0x1ee90000,0x1ef90000)]
+  0x1609d000 JavaThread "Thread-45" daemon [_thread_in_native, id=11428, stack(0x1c070000,0x1c170000)]
+  0x1609b800 JavaThread "TimerQueue" daemon [_thread_blocked, id=7952, stack(0x1f660000,0x1f760000)]
+  0x160a0800 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=12664, stack(0x15080000,0x15180000)]
+  0x149c4c00 JavaThread "Pool C:\Users\Lauro\AppData\Roaming\CooCox\CoIDE\repo\CODB_SIMPLIFY.FDB idleRemover" daemon [_thread_blocked, id=3568, stack(0x23080000,0x23180000)]
+  0x113cd800 JavaThread "Service Thread" daemon [_thread_blocked, id=556, stack(0x12970000,0x12a70000)]
+  0x113c9800 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=16208, stack(0x12830000,0x12930000)]
+  0x113c9000 JavaThread "Attach Listener" daemon [_thread_blocked, id=14528, stack(0x126f0000,0x127f0000)]
+  0x113bc800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=9632, stack(0x125b0000,0x126b0000)]
+  0x113bc000 JavaThread "Surrogate Locker Thread (Concurrent GC)" daemon [_thread_blocked, id=10956, stack(0x12470000,0x12570000)]
+  0x1139fc00 JavaThread "Finalizer" daemon [_thread_blocked, id=16636, stack(0x12330000,0x12430000)]
+  0x1139bc00 JavaThread "Reference Handler" daemon [_thread_blocked, id=16848, stack(0x121f0000,0x122f0000)]
+  0x021dcc00 JavaThread "main" [_thread_blocked, id=11712, stack(0x000a0000,0x001a0000)]
+
+Other Threads:
+=>0x11398000 VMThread [stack: 0x120b0000,0x121b0000] [id=16844]
+
+VM state:at safepoint (shutting down)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x021db6d8] Threads_lock - owner thread: 0x11398000
+
+Heap
+ par new generation   total 39296K, used 21891K [0x05200000, 0x07ca0000, 0x07ca0000)
+  eden space 34944K,  58% used [0x05200000, 0x06614f00, 0x07420000)
+  from space 4352K,  30% used [0x07420000, 0x0756bd40, 0x07860000)
+  to   space 4352K,   0% used [0x07860000, 0x07860000, 0x07ca0000)
+ concurrent mark-sweep generation total 39744K, used 19277K [0x07ca0000, 0x0a370000, 0x0d200000)
+ concurrent-mark-sweep perm gen total 65536K, used 45764K [0x0d200000, 0x11200000, 0x11200000)
+
+Card table byte_map: [0x050e0000,0x05150000] byte_map_base: 0x050b7000
+
+Polling page: 0x021a0000
+
+Code Cache  [0x027a0000, 0x03010000, 0x047a0000)
+ total_blobs=4556 nmethods=4285 adapters=206 free_code_cache=24140Kb largest_free_block=24713920
+
+Compilation events (10 events):
+Event: 739.332 Thread 0x113c9800 4426  s          org.eclipse.osgi.framework.eventmgr.ListenerQueue::queueListeners (37 bytes)
+Event: 739.333 Thread 0x113c9800 nmethod 4426 0x0300bcc8 code [0x0300bdf0, 0x0300c074]
+Event: 739.336 Thread 0x113c9800 4427             org.eclipse.osgi.internal.serviceregistry.ShrinkableCollection::initComposite (157 bytes)
+Event: 739.336 Thread 0x113c9800 nmethod 4427 0x0300c188 code [0x0300c370, 0x0300c69c]
+Event: 739.336 Thread 0x113c9800 4428             org.eclipse.core.internal.registry.ExtensionRegistry$ListenerInfo::equals (25 bytes)
+Event: 739.336 Thread 0x113c9800 nmethod 4428 0x0300ca08 code [0x0300cb00, 0x0300cbf0]
+Event: 739.345 Thread 0x113c9800 4429             org.eclipse.osgi.framework.eventmgr.CopyOnWriteIdentityMap$Snapshot$EntrySet::size (9 bytes)
+Event: 739.345 Thread 0x113c9800 nmethod 4429 0x0300cc88 code [0x0300cd80, 0x0300ce10]
+Event: 739.355 Thread 0x113c9800 4430   !         org.eclipse.osgi.internal.serviceregistry.ServiceRegistry::publishServiceEventPrivileged (256 bytes)
+Event: 739.356 Thread 0x113c9800 nmethod 4430 0x0300ce88 code [0x0300d110, 0x0300da74]
+
+GC Heap History (10 events):
+Event: 691.762 GC heap before
+{Heap before GC invocations=29 (full 10):
+ par new generation   total 39296K, used 35743K [0x05200000, 0x07ca0000, 0x07ca0000)
+  eden space 34944K, 100% used [0x05200000, 0x07420000, 0x07420000)
+  from space 4352K,  18% used [0x07860000, 0x07927fc0, 0x07ca0000)
+  to   space 4352K,   0% used [0x07420000, 0x07420000, 0x07860000)
+ concurrent mark-sweep generation total 39744K, used 18421K [0x07ca0000, 0x0a370000, 0x0d200000)
+ concurrent-mark-sweep perm gen total 65536K, used 45057K [0x0d200000, 0x11200000, 0x11200000)
+Event: 691.763 GC heap after
+Heap after GC invocations=30 (full 10):
+ par new generation   total 39296K, used 1169K [0x05200000, 0x07ca0000, 0x07ca0000)
+  eden space 34944K,   0% used [0x05200000, 0x05200000, 0x07420000)
+  from space 4352K,  26% used [0x07420000, 0x07544798, 0x07860000)
+  to   space 4352K,   0% used [0x07860000, 0x07860000, 0x07ca0000)
+ concurrent mark-sweep generation total 39744K, used 18421K [0x07ca0000, 0x0a370000, 0x0d200000)
+ concurrent-mark-sweep perm gen total 65536K, used 45057K [0x0d200000, 0x11200000, 0x11200000)
+}
+Event: 691.869 GC heap before
+{Heap before GC invocations=30 (full 10):
+ par new generation   total 39296K, used 36113K [0x05200000, 0x07ca0000, 0x07ca0000)
+  eden space 34944K, 100% used [0x05200000, 0x07420000, 0x07420000)
+  from space 4352K,  26% used [0x07420000, 0x07544798, 0x07860000)
+  to   space 4352K,   0% used [0x07860000, 0x07860000, 0x07ca0000)
+ concurrent mark-sweep generation total 39744K, used 18421K [0x07ca0000, 0x0a370000, 0x0d200000)
+ concurrent-mark-sweep perm gen total 65536K, used 45057K [0x0d200000, 0x11200000, 0x11200000)
+Event: 691.870 GC heap after
+Heap after GC invocations=31 (full 10):
+ par new generation   total 39296K, used 987K [0x05200000, 0x07ca0000, 0x07ca0000)
+  eden space 34944K,   0% used [0x05200000, 0x05200000, 0x07420000)
+  from space 4352K,  22% used [0x07860000, 0x07956e98, 0x07ca0000)
+  to   space 4352K,   0% used [0x07420000, 0x07420000, 0x07860000)
+ concurrent mark-sweep generation total 39744K, used 18421K [0x07ca0000, 0x0a370000, 0x0d200000)
+ concurrent-mark-sweep perm gen total 65536K, used 45057K [0x0d200000, 0x11200000, 0x11200000)
+}
+Event: 692.025 GC heap before
+{Heap before GC invocations=31 (full 10):
+ par new generation   total 39296K, used 35931K [0x05200000, 0x07ca0000, 0x07ca0000)
+  eden space 34944K, 100% used [0x05200000, 0x07420000, 0x07420000)
+  from space 4352K,  22% used [0x07860000, 0x07956e98, 0x07ca0000)
+  to   space 4352K,   0% used [0x07420000, 0x07420000, 0x07860000)
+ concurrent mark-sweep generation total 39744K, used 18421K [0x07ca0000, 0x0a370000, 0x0d200000)
+ concurrent-mark-sweep perm gen total 65536K, used 45057K [0x0d200000, 0x11200000, 0x11200000)
+Event: 692.028 GC heap after
+Heap after GC invocations=32 (full 10):
+ par new generation   total 39296K, used 3852K [0x05200000, 0x07ca0000, 0x07ca0000)
+  eden space 34944K,   0% used [0x05200000, 0x05200000, 0x07420000)
+  from space 4352K,  88% used [0x07420000, 0x077e31c8, 0x07860000)
+  to   space 4352K,   0% used [0x07860000, 0x07860000, 0x07ca0000)
+ concurrent mark-sweep generation total 39744K, used 18421K [0x07ca0000, 0x0a370000, 0x0d200000)
+ concurrent-mark-sweep perm gen total 65536K, used 45057K [0x0d200000, 0x11200000, 0x11200000)
+}
+Event: 692.475 GC heap before
+{Heap before GC invocations=32 (full 10):
+ par new generation   total 39296K, used 38796K [0x05200000, 0x07ca0000, 0x07ca0000)
+  eden space 34944K, 100% used [0x05200000, 0x07420000, 0x07420000)
+  from space 4352K,  88% used [0x07420000, 0x077e31c8, 0x07860000)
+  to   space 4352K,   0% used [0x07860000, 0x07860000, 0x07ca0000)
+ concurrent mark-sweep generation total 39744K, used 18421K [0x07ca0000, 0x0a370000, 0x0d200000)
+ concurrent-mark-sweep perm gen total 65536K, used 45101K [0x0d200000, 0x11200000, 0x11200000)
+Event: 692.476 GC heap after
+Heap after GC invocations=33 (full 10):
+ par new generation   total 39296K, used 2373K [0x05200000, 0x07ca0000, 0x07ca0000)
+  eden space 34944K,   0% used [0x05200000, 0x05200000, 0x07420000)
+  from space 4352K,  54% used [0x07860000, 0x07ab1678, 0x07ca0000)
+  to   space 4352K,   0% used [0x07420000, 0x07420000, 0x07860000)
+ concurrent mark-sweep generation total 39744K, used 19277K [0x07ca0000, 0x0a370000, 0x0d200000)
+ concurrent-mark-sweep perm gen total 65536K, used 45101K [0x0d200000, 0x11200000, 0x11200000)
+}
+Event: 739.105 GC heap before
+{Heap before GC invocations=33 (full 10):
+ par new generation   total 39296K, used 37317K [0x05200000, 0x07ca0000, 0x07ca0000)
+  eden space 34944K, 100% used [0x05200000, 0x07420000, 0x07420000)
+  from space 4352K,  54% used [0x07860000, 0x07ab1678, 0x07ca0000)
+  to   space 4352K,   0% used [0x07420000, 0x07420000, 0x07860000)
+ concurrent mark-sweep generation total 39744K, used 19277K [0x07ca0000, 0x0a370000, 0x0d200000)
+ concurrent-mark-sweep perm gen total 65536K, used 45363K [0x0d200000, 0x11200000, 0x11200000)
+Event: 739.106 GC heap after
+Heap after GC invocations=34 (full 10):
+ par new generation   total 39296K, used 1327K [0x05200000, 0x07ca0000, 0x07ca0000)
+  eden space 34944K,   0% used [0x05200000, 0x05200000, 0x07420000)
+  from space 4352K,  30% used [0x07420000, 0x0756bd40, 0x07860000)
+  to   space 4352K,   0% used [0x07860000, 0x07860000, 0x07ca0000)
+ concurrent mark-sweep generation total 39744K, used 19277K [0x07ca0000, 0x0a370000, 0x0d200000)
+ concurrent-mark-sweep perm gen total 65536K, used 45363K [0x0d200000, 0x11200000, 0x11200000)
+}
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 739.345 Thread 0x021dcc00 Threw 0x06497d40 at C:\re\jdk7u71\1605\hotspot\src\share\vm\prims\jvm.cpp:1281
+Event: 739.345 Thread 0x021dcc00 Threw 0x0649bf50 at C:\re\jdk7u71\1605\hotspot\src\share\vm\prims\jvm.cpp:1281
+Event: 739.350 Thread 0x021dcc00 Threw 0x064b3030 at C:\re\jdk7u71\1605\hotspot\src\share\vm\prims\jvm.cpp:1281
+Event: 739.351 Thread 0x021dcc00 Threw 0x064b77e8 at C:\re\jdk7u71\1605\hotspot\src\share\vm\prims\jvm.cpp:1281
+Event: 739.351 Thread 0x021dcc00 Threw 0x064bc2c8 at C:\re\jdk7u71\1605\hotspot\src\share\vm\prims\jvm.cpp:1281
+Event: 739.352 Thread 0x021dcc00 Threw 0x064c8508 at C:\re\jdk7u71\1605\hotspot\src\share\vm\prims\jvm.cpp:1281
+Event: 739.354 Thread 0x12d62000 Threw 0x064d6178 at C:\re\jdk7u71\1605\hotspot\src\share\vm\prims\jvm.cpp:3002
+Event: 739.355 Thread 0x1609d400 Threw 0x06143cb8 at C:\re\jdk7u71\1605\hotspot\src\share\vm\runtime\objectMonitor.cpp:1652
+Event: 739.357 Thread 0x12d63800 Threw 0x0652f300 at C:\re\jdk7u71\1605\hotspot\src\share\vm\runtime\objectMonitor.cpp:1652
+Event: 739.381 Thread 0x12d7b400 Threw 0x063cf958 at C:\re\jdk7u71\1605\hotspot\src\share\vm\runtime\objectMonitor.cpp:1652
+
+Events (10 events):
+Event: 739.381 loading class 0x12bdafa0 done
+Event: 739.382 Thread 0x12cd2000 Thread exited: 0x12cd2000
+Event: 739.382 Thread 0x166a9c00 Thread added: 0x166a9c00
+Event: 739.382 Thread 0x166a9400 Thread added: 0x166a9400
+Event: 739.382 Thread 0x166a9c00 Thread exited: 0x166a9c00
+Event: 739.382 loading class 0x12e62970
+Event: 739.382 loading class 0x12e62970 done
+Event: 739.394 Thread 0x1609c400 Thread exited: 0x1609c400
+Event: 739.482 Thread 0x166a9400 Thread exited: 0x166a9400
+Event: 739.483 Executing VM operation: Exit
+
+
+Dynamic libraries:
+0x00400000 - 0x0040d000 	C:\CooCox\CoIDE_V2Beta\CoIDE.exe
+0x77810000 - 0x7799e000 	C:\Windows\SYSTEM32\ntdll.dll
+0x74910000 - 0x749e0000 	C:\Windows\System32\KERNEL32.DLL
+0x74740000 - 0x74902000 	C:\Windows\System32\KERNELBASE.dll
+0x76f60000 - 0x7709c000 	C:\Windows\System32\USER32.dll
+0x76990000 - 0x769a6000 	C:\Windows\System32\win32u.dll
+0x76a90000 - 0x76ab1000 	C:\Windows\System32\GDI32.dll
+0x745e0000 - 0x74738000 	C:\Windows\System32\gdi32full.dll
+0x76d30000 - 0x76da9000 	C:\Windows\System32\msvcp_win.dll
+0x766d0000 - 0x767e8000 	C:\Windows\System32\ucrtbase.dll
+0x765e0000 - 0x7669d000 	C:\Windows\System32\MSVCRT.dll
+0x57040000 - 0x570ce000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.15063.413_none_55bc94a37c2a2854\COMCTL32.dll
+0x76a10000 - 0x76a87000 	C:\Windows\System32\ADVAPI32.dll
+0x743b0000 - 0x743f1000 	C:\Windows\System32\sechost.dll
+0x76500000 - 0x765c0000 	C:\Windows\System32\RPCRT4.dll
+0x742e0000 - 0x74300000 	C:\Windows\System32\SspiCli.dll
+0x742d0000 - 0x742da000 	C:\Windows\System32\CRYPTBASE.dll
+0x769b0000 - 0x76a07000 	C:\Windows\System32\bcryptPrimitives.dll
+0x766a0000 - 0x766c5000 	C:\Windows\System32\IMM32.DLL
+0x72000000 - 0x7200d000 	C:\CooCox\CoIDE_V2Beta\plugins\org.eclipse.equinox.launcher.win32.win32.x86_1.1.100.v20110502\eclipse_1406.dll
+0x74260000 - 0x74268000 	C:\Windows\SYSTEM32\VERSION.dll
+0x53c70000 - 0x53ff9000 	C:\CooCox\CoIDE_V2Beta\jre\bin\client\jvm.dll
+0x765c0000 - 0x765c6000 	C:\Windows\System32\PSAPI.DLL
+0x74040000 - 0x74048000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x71be0000 - 0x71c04000 	C:\Windows\SYSTEM32\WINMM.dll
+0x74400000 - 0x74467000 	C:\Windows\System32\WS2_32.dll
+0x53bb0000 - 0x53c6f000 	C:\Windows\SYSTEM32\MSVCR100.dll
+0x71b00000 - 0x71b23000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x74310000 - 0x74349000 	C:\Windows\System32\cfgmgr32.dll
+0x54220000 - 0x5422c000 	C:\CooCox\CoIDE_V2Beta\jre\bin\verify.dll
+0x54200000 - 0x54220000 	C:\CooCox\CoIDE_V2Beta\jre\bin\java.dll
+0x541c0000 - 0x541d3000 	C:\CooCox\CoIDE_V2Beta\jre\bin\zip.dll
+0x71840000 - 0x71853000 	C:\Windows\SYSTEM32\CRYPTSP.dll
+0x71810000 - 0x7183f000 	C:\Windows\system32\rsaenh.dll
+0x735d0000 - 0x735e8000 	C:\Windows\SYSTEM32\bcrypt.dll
+0x74010000 - 0x74032000 	C:\Windows\SYSTEM32\USERENV.dll
+0x765d0000 - 0x765e0000 	C:\Windows\System32\profapi.dll
+0x53b90000 - 0x53ba4000 	C:\CooCox\CoIDE_V2Beta\jre\bin\net.dll
+0x74090000 - 0x740de000 	C:\Windows\system32\mswsock.dll
+0x71ca0000 - 0x71ccf000 	C:\Windows\SYSTEM32\IPHLPAPI.DLL
+0x76db0000 - 0x76db7000 	C:\Windows\System32\NSI.dll
+0x71720000 - 0x71733000 	C:\Windows\SYSTEM32\dhcpcsvc6.DLL
+0x71740000 - 0x71754000 	C:\Windows\SYSTEM32\dhcpcsvc.DLL
+0x541f0000 - 0x541ff000 	C:\CooCox\CoIDE_V2Beta\jre\bin\nio.dll
+0x6ffb0000 - 0x70028000 	C:\Windows\system32\uxtheme.dll
+0x77560000 - 0x77798000 	C:\Windows\System32\combase.dll
+0x767f0000 - 0x76936000 	C:\Windows\System32\MSCTF.dll
+0x74fc0000 - 0x75056000 	C:\Windows\System32\OLEAUT32.dll
+0x770a0000 - 0x770ae000 	C:\Windows\System32\kernel.appcore.dll
+0x58ab0000 - 0x58b17000 	C:\Windows\System32\TextInputFramework.dll
+0x58a20000 - 0x58aaf000 	C:\Windows\System32\CoreMessaging.dll
+0x587f0000 - 0x58a17000 	C:\Windows\System32\CoreUIComponents.dll
+0x76ac0000 - 0x76b4c000 	C:\Windows\System32\SHCORE.dll
+0x717e0000 - 0x71808000 	C:\Windows\SYSTEM32\ntmarta.dll
+0x63850000 - 0x63921000 	C:\Windows\SYSTEM32\wintypes.dll
+0x587e0000 - 0x587f0000 	C:\Windows\SYSTEM32\usermgrcli.dll
+0x6fa40000 - 0x6fa63000 	C:\Windows\system32\dwmapi.dll
+0x71d40000 - 0x71d51000 	C:\Windows\system32\napinsp.dll
+0x71cd0000 - 0x71ce6000 	C:\Windows\system32\pnrpnsp.dll
+0x71c10000 - 0x71c23000 	C:\Windows\system32\NLAapi.dll
+0x71b60000 - 0x71bdf000 	C:\Windows\SYSTEM32\DNSAPI.dll
+0x71a50000 - 0x71a5b000 	C:\Windows\System32\winrnr.dll
+0x71980000 - 0x719a1000 	C:\Program Files (x86)\Bonjour\mdnsNSP.dll
+0x71960000 - 0x71968000 	C:\Program Files (x86)\National Instruments\Shared\mDNS Responder\nimdnsNSP.dll
+0x73fc0000 - 0x73fd4000 	C:\Windows\SYSTEM32\VCRUNTIME140.dll
+0x718d0000 - 0x718dd000 	C:\Windows\SYSTEM32\nimdnsResponder.dll
+0x718c0000 - 0x718d0000 	C:\Windows\System32\wshbth.dll
+0x718b0000 - 0x718b8000 	C:\Windows\System32\rasadhlp.dll
+0x71860000 - 0x718aa000 	C:\Windows\System32\fwpuclnt.dll
+0x14a00000 - 0x14a6e000 	C:\CooCox\CoIDE_V2Beta\configuration\org.eclipse.osgi\bundles\115\1\.cp\swt-win32-3740.dll
+0x763b0000 - 0x764a3000 	C:\Windows\System32\ole32.dll
+0x76be0000 - 0x76ccf000 	C:\Windows\System32\comdlg32.dll
+0x76940000 - 0x76985000 	C:\Windows\System32\SHLWAPI.dll
+0x75060000 - 0x763a8000 	C:\Windows\System32\SHELL32.dll
+0x6c780000 - 0x6c98e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.15063.483_none_6dad63fefc436da8\COMCTL32.dll
+0x749e0000 - 0x74f67000 	C:\Windows\System32\windows.storage.dll
+0x764b0000 - 0x764f5000 	C:\Windows\System32\powrprof.dll
+0x76dc0000 - 0x76f3d000 	C:\Windows\System32\CRYPT32.dll
+0x74300000 - 0x7430e000 	C:\Windows\System32\MSASN1.dll
+0x6d6f0000 - 0x6d75e000 	C:\Windows\SYSTEM32\WINSPOOL.DRV
+0x613a0000 - 0x613b7000 	C:\Windows\SYSTEM32\USP10.dll
+0x6c4b0000 - 0x6c771000 	C:\Windows\SYSTEM32\WININET.dll
+0x69760000 - 0x698c4000 	C:\Windows\SYSTEM32\propsys.dll
+0x770b0000 - 0x77133000 	C:\Windows\System32\clbcatq.dll
+0x14ba0000 - 0x14bbd000 	C:\CooCox\CoIDE_V2Beta\configuration\org.eclipse.osgi\bundles\115\1\.cp\swt-gdip-win32-3740.dll
+0x66160000 - 0x662c6000 	C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.15063.608_none_9e9d5d4256d15def\gdiplus.dll
+0x65fe0000 - 0x66152000 	C:\Windows\SYSTEM32\WindowsCodecs.dll
+0x14d30000 - 0x14d3e000 	C:\CooCox\CoIDE_V2Beta\configuration\org.eclipse.osgi\bundles\72\1\.cp\os\win32\x86\localfile_1_0_0.dll
+0x613c0000 - 0x61416000 	C:\Windows\SYSTEM32\oleacc.dll
+0x5c8f0000 - 0x5c933000 	C:\Windows\system32\dataexchange.dll
+0x61130000 - 0x61382000 	C:\Windows\system32\d3d11.dll
+0x5c800000 - 0x5c8eb000 	C:\Windows\system32\dcomp.dll
+0x6f5d0000 - 0x6f65a000 	C:\Windows\system32\dxgi.dll
+0x5c6c0000 - 0x5c7f6000 	C:\Windows\system32\twinapi.appcore.dll
+0x55c10000 - 0x55c44000 	C:\Windows\system32\mlang.dll
+0x6c3c0000 - 0x6c3c6000 	C:\Windows\SYSTEM32\msimg32.dll
+0x53b50000 - 0x53b8c000 	C:\Windows\SYSTEM32\edputil.dll
+0x52ff0000 - 0x53b4f000 	C:\Windows\System32\ieframe.dll
+0x67170000 - 0x67383000 	C:\Windows\System32\iertutil.dll
+0x71a80000 - 0x71a93000 	C:\Windows\System32\NETAPI32.dll
+0x71970000 - 0x7197b000 	C:\Windows\System32\NETUTILS.DLL
+0x71950000 - 0x71960000 	C:\Windows\System32\WKSCLI.DLL
+0x74350000 - 0x743ae000 	C:\Windows\System32\coml2.dll
+0x691c0000 - 0x6935c000 	C:\Windows\SYSTEM32\urlmon.dll
+0x58550000 - 0x585d6000 	C:\Windows\SYSTEM32\sxs.dll
+0x52f80000 - 0x52fe1000 	C:\Windows\SYSTEM32\msiso.dll
+0x51bf0000 - 0x52f73000 	C:\Windows\System32\mshtml.dll
+0x51bc0000 - 0x51be3000 	C:\Windows\System32\srpapi.dll
+0x51a40000 - 0x51bab000 	C:\Windows\System32\ieapfltr.dll
+0x51a30000 - 0x51a3e000 	C:\Windows\system32\msimtf.dll
+0x61390000 - 0x6139a000 	C:\Windows\SYSTEM32\Secur32.dll
+0x6e9e0000 - 0x6e9f5000 	C:\Windows\SYSTEM32\ondemandconnroutehelper.dll
+0x71db0000 - 0x71e5d000 	C:\Windows\SYSTEM32\winhttp.dll
+0x734e0000 - 0x734e8000 	C:\Windows\SYSTEM32\WINNSI.DLL
+0x50fa0000 - 0x514a0000 	C:\Windows\System32\d2d1.dll
+0x69db0000 - 0x69ff7000 	C:\Windows\System32\DWrite.dll
+0x50c10000 - 0x50f94000 	C:\Windows\System32\jscript9.dll
+0x6e940000 - 0x6e9d3000 	C:\Windows\SYSTEM32\apphelp.dll
+0x51680000 - 0x5176d000 	C:\Windows\System32\DDRAW.dll
+0x51670000 - 0x51677000 	C:\Windows\System32\DCIMAN32.dll
+0x70a00000 - 0x70a2f000 	C:\Windows\System32\XmlLite.dll
+0x5b420000 - 0x5b452000 	C:\Windows\System32\msls31.dll
+0x6c430000 - 0x6c4ae000 	C:\Windows\SYSTEM32\DSOUND.dll
+0x51660000 - 0x5166c000 	C:\Windows\SYSTEM32\atlthunk.dll
+0x6c3d0000 - 0x6c429000 	C:\Windows\System32\MMDevApi.dll
+0x735a0000 - 0x735c2000 	C:\Windows\System32\DEVOBJ.dll
+0x517a0000 - 0x517c5000 	C:\CooCox\CoIDE_V2Beta\jre\bin\jaybird22.dll
+0x22970000 - 0x22d1d000 	C:\CooCox\CoIDE_V2Beta\jre\bin\fbembed.dll
+
+VM Arguments:
+jvm_args: -Dosgi.parentClassloader=ext --launcher.XXMaxPermSize 256M -vmargs -Xms60m -Xmx128m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled 
+java_command: <unknown>
+Launcher Type: generic
+
+Environment Variables:
+USERNAME=Lauro
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, erms, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 33434012k(28055852k free), swap 38414748k(32784184k free)
+
+vm_info: Java HotSpot(TM) Client VM (24.71-b01) for windows-x86 JRE (1.7.0_71-b14), built on Sep 26 2014 16:30:49 by "java_re" with unknown MS VC++:1600
+
+time: Tue Jan 02 21:25:37 2018
+elapsed time: 739 seconds
+

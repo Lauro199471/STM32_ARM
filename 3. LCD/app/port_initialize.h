@@ -1,4 +1,3 @@
-
 #include "stm32f0xx.h"
 
 #define PORT_C_CLK_EN        0x00080000
@@ -45,11 +44,11 @@
 #define GPIO_NoPUPD_A8_A10  0x00000000
 
 /*******************************
-*			  Port Initilazing       *
+*       Port Initilazing       *
 ********************************/
 void PortC_Init(void)
 {
-	// Enable the GPIO Clock for Port C using the AHB and RCC
+  // Enable the GPIO Clock for Port C using the AHB and RCC
   RCC -> AHBENR |= PORT_C_CLK_EN;
 
   // Set Control Registers for PC6-9
@@ -72,13 +71,13 @@ void PortC_Init(void)
 
 void PortB_Init(void)
 {
-	// Enable the GPIO Clock for Port B using the AHB and RCC
+  // Enable the GPIO Clock for Port B using the AHB and RCC
   RCC -> AHBENR |= PORT_B_CLK_EN;
 
   // Set Control Registers for PC8,PC5
   // Mode Register
   GPIOB->MODER &= ~(GPIO_MODE_CLEAR_B12_B15);
-	GPIOB->MODER |= GPIO_MODE_OUTPUT_B12_B15;
+  GPIOB->MODER |= GPIO_MODE_OUTPUT_B12_B15;
 
   // Output Type Register
   GPIOB->OTYPER &= ~(GPIO_TYPE_CLEAR_B12_B15);
@@ -95,7 +94,7 @@ void PortB_Init(void)
 
 void PortA_Init(void)
 {
-	// Enable the GPIO Clock for Port A using the AHB and RCC
+  // Enable the GPIO Clock for Port A using the AHB and RCC
   RCC -> AHBENR |= PORT_A_CLK_EN;
 
   // Set Control Registers for PA8-10
