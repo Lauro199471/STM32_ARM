@@ -268,3 +268,8 @@ void Init_lcd(void)
   LCDSendaString("  Lauro Cabral "); 
   timeDelay(800000);
 }
+
+void LCDSetCursorLocation(uint8_t X, uint8_t Y)
+{
+  LCDSendAnCommand(0x80 + X + (Y * 40));
+}

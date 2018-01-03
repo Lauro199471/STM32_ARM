@@ -23,24 +23,21 @@
 ********************************/
 int main(void)
 {
+  int y = 0, x = 0;
   PortA_Init();
   PortB_Init();
   PortC_Init();
   Init_lcd();
-  /*while(1)
+
+  for (y = 0; y <= 1; y=y+1)
   {
-    timeDelay(200000);
-    LCDSendAnCommand(0b00000001); // Clear Display
-    LCDSendaString("i: ");
-    LCDOutFloat(i);
-    LCDSendAnCommand(0b11000000); // go to next line
-    LCDSendaString("j: ");
-    LCDOutFloat(j);
-    i = i + 0.1;
-    if(i > 12)
-      i = 0;
-    j = j + 0.2;
-    if(j > 12)
-      j = 0;
-  }*/
+    for (x = 0; x <= 15; x=x+1)
+    {
+    	LCDSetCursorLocation(x,y);
+    	LCDSendAnCharacter("x");
+    	timeDelay(500000);
+    	LCDSetCursorLocation(x,y);
+    	LCDSendAnCharacter(" ");
+	}
+  }
 }
