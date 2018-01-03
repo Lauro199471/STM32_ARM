@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="5.4.1 -mcpu=cortex-m0 -mthumb -g2 -Map=GPIOSimpleInput.map -O0 --gc-sections -LC:\Users\Lauro\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\GPIOSimpleInput -TC:\Users\Lauro\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\GPIOSimpleInput/arm-gcc-link.ld -g">
+      <target file="GPIOSimpleInput.elf" lastModified="16087012115">
+         <source file="..\obj\stm32f0xx_hal_pwr.o" lastModified="16086e741cb"/>
+         <source file="..\obj\stm32f0xx_hal_dac_ex.o" lastModified="16086e74a89"/>
+         <source file="..\obj\stm32f0xx_hal.o" lastModified="16086e7536b"/>
+         <source file="..\obj\stm32f0xx_hal_pcd_ex.o" lastModified="16086e784cc"/>
+         <source file="..\obj\stm32f0xx_hal_adc.o" lastModified="16086e755b2"/>
+         <source file="..\obj\stm32f0xx_hal_rtc_ex.o" lastModified="16086e767ab"/>
+         <source file="..\obj\stm32f0xx_hal_pcd.o" lastModified="16086e759fc"/>
+         <source file="..\obj\stm32f0xx_hal_usart.o" lastModified="16086e7772a"/>
+         <source file="..\obj\stm32f0xx_hal_gpio.o" lastModified="16086e79afe"/>
+         <source file="..\obj\stm32f0xx_hal_uart_ex.o" lastModified="16086e791ce"/>
+         <source file="..\obj\stm32f0xx_hal_adc_ex.o" lastModified="16086e762e5"/>
+         <source file="..\obj\stm32f0xx_hal_iwdg.o" lastModified="16086e77b7e"/>
+         <source file="..\obj\stm32f0xx_hal_crc_ex.o" lastModified="16086e7609e"/>
+         <source file="..\obj\stm32f0xx_hal_tim_ex.o" lastModified="16086e78fa4"/>
+         <source file="..\obj\stm32f0xx_hal_i2c.o" lastModified="16086e78082"/>
+         <source file="..\obj\stm32f0xx_hal_rtc.o" lastModified="16086e78b3c"/>
+         <source file="..\obj\main.o" lastModified="16087011eb4"/>
+         <source file="..\obj\stm32f0xx_hal_comp.o" lastModified="16086e798d4"/>
+         <source file="..\obj\system_stm32f0xx.o" lastModified="16086e78903"/>
+         <source file="..\obj\stm32f0xx_hal_dac.o" lastModified="16086e7483f"/>
+         <source file="..\obj\stm32f0xx_hal_smartcard_ex.o" lastModified="16086e743e9"/>
+         <source file="..\obj\stm32f0xx_hal_can.o" lastModified="16086e7460e"/>
+         <source file="..\obj\stm32f0xx_hal_pwr_ex.o" lastModified="16086e78d5d"/>
+         <source file="..\obj\stm32f0xx_hal_flash_ex.o" lastModified="16086e76e88"/>
+         <source file="..\obj\stm32f0xx_hal_tim.o" lastModified="16086e7946c"/>
+         <source file="..\obj\stm32f0xx_hal_i2s.o" lastModified="16086e757d8"/>
+         <source file="..\obj\stm32f0xx_hal_rcc_ex.o" lastModified="16086e76c28"/>
+         <source file="..\obj\stm32f0xx_hal_smbus.o" lastModified="16086e796bb"/>
+         <source file="..\obj\stm32f0xx_hal_irda.o" lastModified="16086e79d19"/>
+         <source file="..\obj\stm32f0xx_hal_wwdg.o" lastModified="16086e74cb7"/>
+         <source file="..\obj\stm32f0xx_hal_flash.o" lastModified="16086e782ae"/>
+         <source file="..\obj\stm32f0xx_hal_crc.o" lastModified="16086e74f03"/>
+         <source file="..\obj\stm32f0xx_hal_i2c_ex.o" lastModified="16086e786ed"/>
+         <source file="..\obj\stm32f0xx_hal_uart.o" lastModified="16086e75c4a"/>
+         <source file="..\obj\stm32f0xx_hal_cec.o" lastModified="16086e769dc"/>
+         <source file="..\obj\stm32f0xx_hal_tsc.o" lastModified="16086e770a6"/>
+         <source file="..\obj\startup_stm32f030x8.o" lastModified="16086e774d7"/>
+         <source file="..\obj\stm32f0xx_hal_dma.o" lastModified="16086e772da"/>
+         <source file="..\obj\stm32f0xx_hal_spi.o" lastModified="16086e77dee"/>
+         <source file="..\obj\stm32f0xx_hal_smartcard.o" lastModified="16086e76546"/>
+         <source file="..\obj\stm32f0xx_hal_cortex.o" lastModified="16086e7795b"/>
+         <source file="..\obj\stm32f0xx_hal_rcc.o" lastModified="16086e7513d"/>
+      </target>
+   </processor>
+</history>
