@@ -1,2 +1,2 @@
 GPIO Tutorial
-  This project serves as a GPIO introduction to the STM32
+This project serves as a GPIO introduction to the STM32
