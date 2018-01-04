@@ -8,6 +8,8 @@ int main(void)
   PortB_Init();
   PortC_Init();
   Init_lcd();
+
+  
   while(1)
   {
   }
