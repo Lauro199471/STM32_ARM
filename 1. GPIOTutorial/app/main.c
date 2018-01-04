@@ -20,7 +20,7 @@ void WaitForAMoment(int time)
 
 void PortC_Init(void)
 {
-	// Enable the GPIO Clock for Port C using the AHB and RCC
+  // Enable the GPIO Clock for Port C using the AHB and RCC
   RCC -> AHBENR |= PORT_C_CLK_EN;
 
   // Set Control Registers for PC6

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="5.4.1 -mcpu=cortex-m0 -mthumb -g2 -Map=4. ADC.map -O0 --gc-sections -LC:\Users\Lauro\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\4. ADC -TC:\Users\Lauro\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\4. ADC/arm-gcc-link.ld -g">
-      <target file="4. ADC.elf" lastModified="160bf85ca61">
+      <target file="4. ADC.elf" lastModified="160bfaa210d">
          <source file="..\obj\stm32f0xx_hal_pwr.o" lastModified="160bf856455"/>
          <source file="..\obj\stm32f0xx_hal_dac_ex.o" lastModified="160bf856dd2"/>
          <source file="..\obj\stm32f0xx_hal.o" lastModified="160bf85775b"/>
@@ -18,7 +18,7 @@
          <source file="..\obj\stm32f0xx_hal_tim_ex.o" lastModified="160bf85b871"/>
          <source file="..\obj\stm32f0xx_hal_i2c.o" lastModified="160bf85a7e9"/>
          <source file="..\obj\stm32f0xx_hal_rtc.o" lastModified="160bf85b3ac"/>
-         <source file="..\obj\main.o" lastModified="160bf85838a"/>
+         <source file="..\obj\main.o" lastModified="160bfaa1de4"/>
          <source file="..\obj\stm32f0xx_hal_comp.o" lastModified="160bf85c27a"/>
          <source file="..\obj\system_stm32f0xx.o" lastModified="160bf85b144"/>
          <source file="..\obj\stm32f0xx_hal_dac.o" lastModified="160bf856b7e"/>
