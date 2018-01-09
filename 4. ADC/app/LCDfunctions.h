@@ -7,7 +7,7 @@
 #define CLEARLCD    0b00000001
 #define CURSORHOME  0b00000010
 #define ENTRYMODE   0b00000110
-#define DISPLAYMODE 0b00001110
+#define DISPLAYMODE 0b00001100
 #define FUNCTIONSET 0b00111000
 #define TWOLINES    0b11000000
 
@@ -261,7 +261,7 @@ void Init_lcd(void)
   LCDSendAnCommand(CLEARLCD); 
   LCDSendAnCommand(CURSORHOME);
   LCDSendAnCommand(FUNCTIONSET); // Two Lines 
-  LCDSendAnCommand(DISPLAYMODE); // Turn on display and cursor
+  LCDSendAnCommand(DISPLAYMODE); // Turn on display and turn off cursor
   LCDSendAnCommand(ENTRYMODE);   // Increment cursor to the right when writing; dont shift screen
   LCDSendaString("    Welcome");
   LCDSendAnCommand(TWOLINES); // go to next line
