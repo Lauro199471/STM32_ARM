@@ -11,8 +11,8 @@
 #define FUNCTIONSET 0b00111000
 #define TWOLINES    0b11000000
 
-char stringDec[5];
-char res[10];
+char stringDec[4];
+char res[4];
 int afterpoint = 3;
 
 void timeDelay(int wait)
