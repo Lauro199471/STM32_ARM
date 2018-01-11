@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <history>
    <processor signature="5.4.1 -mcpu=cortex-m0 -mthumb -g2 -Map=4. ADC.map -O0 --gc-sections -LC:\Users\Lauro\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\4. ADC -TC:\Users\Lauro\AppData\Roaming\CooCox\CoIDE\configuration\ProgramData\4. ADC/arm-gcc-link.ld -g">
-      <target file="4. ADC.elf" lastModified="160df3b5f65">
+      <target file="4. ADC.elf" lastModified="160e3c4d807">
          <source file="..\obj\stm32f0xx_hal_pwr.o" lastModified="160df3af9f2"/>
          <source file="..\obj\stm32f0xx_hal_dac_ex.o" lastModified="160df3b0330"/>
          <source file="..\obj\stm32f0xx_hal.o" lastModified="160df3b0c97"/>
@@ -18,7 +18,7 @@
          <source file="..\obj\stm32f0xx_hal_tim_ex.o" lastModified="160df3b4de1"/>
          <source file="..\obj\stm32f0xx_hal_i2c.o" lastModified="160df3b3ce4"/>
          <source file="..\obj\stm32f0xx_hal_rtc.o" lastModified="160df3b490c"/>
-         <source file="..\obj\main.o" lastModified="160df3b1863"/>
+         <source file="..\obj\main.o" lastModified="160e3c4d582"/>
          <source file="..\obj\stm32f0xx_hal_comp.o" lastModified="160df3b5817"/>
          <source file="..\obj\system_stm32f0xx.o" lastModified="160df3b467f"/>
          <source file="..\obj\stm32f0xx_hal_dac.o" lastModified="160df3b00d9"/>
@@ -26,8 +26,8 @@
          <source file="..\obj\stm32f0xx_hal_can.o" lastModified="160df3afe8f"/>
          <source file="..\obj\stm32f0xx_hal_pwr_ex.o" lastModified="160df3b4b5f"/>
          <source file="..\obj\stm32f0xx_hal_flash_ex.o" lastModified="160df3b28a0"/>
-         <source file="..\obj\stm32f0xx_hal_tim.o" lastModified="160df3b532b"/>
          <source file="..\obj\stm32f0xx_hal_i2s.o" lastModified="160df3b114e"/>
+         <source file="..\obj\stm32f0xx_hal_tim.o" lastModified="160df3b532b"/>
          <source file="..\obj\stm32f0xx_hal_rcc_ex.o" lastModified="160df3b2649"/>
          <source file="..\obj\stm32f0xx_hal_smbus.o" lastModified="160df3b55b9"/>
          <source file="..\obj\stm32f0xx_hal_irda.o" lastModified="160df3b5ce9"/>

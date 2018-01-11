@@ -18,7 +18,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Users/Lauro/CoIDE/workspace/STM32_ARM/4. ADC/app/main.c" title="main.c" tooltip="C:/Users/Lauro/CoIDE/workspace/STM32_ARM/4. ADC/app/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/4. ADC/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2571" selectionTopPixel="1356"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2140" selectionTopPixel="1045"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="LCDfunctions.h" partName="LCDfunctions.h" path="C:/Users/Lauro/CoIDE/workspace/STM32_ARM/4. ADC/app/LCDfunctions.h" title="LCDfunctions.h" tooltip="C:/Users/Lauro/CoIDE/workspace/STM32_ARM/4. ADC/app/LCDfunctions.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/4. ADC/LCDfunctions.h"/>
@@ -44,8 +44,7 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Warnings (1 item)"/>
+<expanded>&#x0A;<category IMemento.internal.id="Warnings (1 item)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="195" org.eclipse.ui.ide.markerType="195" org.eclipse.ui.ide.pathField="260" org.eclipse.ui.ide.resourceField="195" org.eclipse.ui.ide.severityAndDescriptionField="650"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -122,7 +121,7 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1436e6b" ratio="0.69928646" ratioLeft="686" ratioRight="295" relationship="4" relative="org.eclipse.ui.internal.ViewStack@65653">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1436e6b" ratio="0.6910377" ratioLeft="586" ratioRight="262" relationship="4" relative="org.eclipse.ui.internal.ViewStack@65653">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
@@ -180,8 +179,71 @@
 <item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1240" y="2"/>
 </item>
-<item active="true" historyLabel="main.c" index="0">
+<item historyLabel="main.c" index="0">
 <position info="not_deleted" x="1950" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="455" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2924" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2724" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2587" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2901" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2979" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2917" y="2"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2687" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="594" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="555" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1177" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1513" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2530" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="2936" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="3369" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="3479" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="221" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="369" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1022" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1333" y="2"/>
+</item>
+<item active="true" historyLabel="main.c" index="0">
+<position info="not_deleted" x="1730" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

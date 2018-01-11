@@ -34,16 +34,15 @@ int ADCTEMP(int analogValue)
   return temp;
 }
 
-float FahtoCelsius(int analogValue)
+int FahtoCelsius(int analogValue)
 {
-  float temp = (float)(analogValue-32) / 1.8;
+  int temp = (int)(analogValue-32) / 1.8;
   return temp;
 }
 
 int main(void)
 {
   int FAH_total = 0 , i = 0 , FAH = 0;
-  float CEL;
   int fah_array[20];
   PortA_Init();
   PortB_Init();
@@ -95,30 +94,30 @@ int main(void)
     // Start conversion
     ADC1->CR |= ADC_start;
     // wait till conversion is done (eoc = end of conversion)
-    /////////////////////////////////////////////////////////////
-    // work on this
     while((ADC1->ISR & ADC_EOC) == 0){}
-    fah_array[i] = ADCTEMP(ADC1->DR);
-    FAH_total += fah_array[i];
-    FAH = FAH_total / i+1;
-    /////////////////////////////////////////////////////////////
-    CEL = FahtoCelsius(FAH);
-    LCDSetCursorLocation(0,1);
-    LCDOutUDec(ADCTEMP(ADC1->DR));
-    LCDSetCursorLocation(4,1);
-    LCDSendAnCharacter(cicrle4FnC);
-    LCDSendaString("F");
+   
+    // Smoothing
+    fah_array[i] = ADC1->DR;
+    FAH_total = FAH_total + fah_array[i];
 
-    LCDSetCursorLocation(7,1);
-    LCDOutFloat(CEL);
-    LCDSetCursorLocation(12,1);
-    LCDSendAnCharacter(cicrle4FnC);
-    LCDSendaString("C");
+    if(i >= 20)
+    {
+      i = -1;
+      FAH_total = FAH_total / 21;
+      FAH = ADCTEMP(FAH_total);
+      LCDSetCursorLocation(0,1);
+      LCDOutUDec(FAH);
+      LCDSetCursorLocation(4,1);
+      LCDSendAnCharacter(cicrle4FnC);
+      LCDSendaString("F");
 
+      LCDSetCursorLocation(8,1);
+      LCDOutUDec(FahtoCelsius(FAH));
+      LCDSetCursorLocation(12,1);
+      LCDSendAnCharacter(cicrle4FnC);
+      LCDSendaString("C");
+      FAH_total = 0;
+    } 
     i = i + 1;
-    if(i >= 20){i = 0;} 
-    //LCDSetCursorLocation(12,1);
-    //LCDOutUDec(*TEMP110_CAL_ADDR);
-
   }
 }

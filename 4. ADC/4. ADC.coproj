@@ -135,9 +135,9 @@
     <File name="components/STM32F030x8_CUBELIB/stm32f0xx_hal_rcc.h" path="components/coocox-master/STM32F030x8_CUBELIB/source/stm32f0xx_hal_rcc.h" type="1"/>
     <File name="components/STM32F030x8_CUBELIB/stm32f0xx_hal_pwr_ex.c" path="components/coocox-master/STM32F030x8_CUBELIB/source/stm32f0xx_hal_pwr_ex.c" type="1"/>
     <File name="components/STM32F030x8_CUBELIB/stm32f0xx_hal_flash_ex.c" path="components/coocox-master/STM32F030x8_CUBELIB/source/stm32f0xx_hal_flash_ex.c" type="1"/>
-    <File name="components/STM32F030x8_CUBELIB/stm32f0xx_hal_tim.c" path="components/coocox-master/STM32F030x8_CUBELIB/source/stm32f0xx_hal_tim.c" type="1"/>
     <File name="components/STM32F030x8_CUBELIB/stm32f0xx_hal_i2s.c" path="components/coocox-master/STM32F030x8_CUBELIB/source/stm32f0xx_hal_i2s.c" type="1"/>
     <File name="components/STM32F030x8_CUBELIB/stm32f0xx_hal_gpio_ex.h" path="components/coocox-master/STM32F030x8_CUBELIB/source/stm32f0xx_hal_gpio_ex.h" type="1"/>
+    <File name="components/STM32F030x8_CUBELIB/stm32f0xx_hal_tim.c" path="components/coocox-master/STM32F030x8_CUBELIB/source/stm32f0xx_hal_tim.c" type="1"/>
     <File name="components/STM32F030x8_CUBELIB/stm32f0xx_hal_can.h" path="components/coocox-master/STM32F030x8_CUBELIB/source/stm32f0xx_hal_can.h" type="1"/>
     <File name="components/STM32F030x8_CUBELIB/stm32f0xx_hal_rcc_ex.c" path="components/coocox-master/STM32F030x8_CUBELIB/source/stm32f0xx_hal_rcc_ex.c" type="1"/>
     <File name="components/STM32F030x8_CUBELIB/stm32f0xx_hal_gpio.h" path="components/coocox-master/STM32F030x8_CUBELIB/source/stm32f0xx_hal_gpio.h" type="1"/>
