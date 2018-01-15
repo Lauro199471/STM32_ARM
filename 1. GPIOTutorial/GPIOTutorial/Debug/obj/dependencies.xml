@@ -115,7 +115,7 @@
       <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_smartcard_ex.c" lastModified="16077391d56">
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal.h"/>
       </source>
-      <source file="..\..\..\app\main.c" lastModified="16081314ae4">
+      <source file="..\..\..\app\main.c" lastModified="160fa86cbf5">
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_conf.h" lastModified="16077391d76">

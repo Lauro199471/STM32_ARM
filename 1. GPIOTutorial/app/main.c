@@ -39,6 +39,7 @@ void PortC_Init(void)
 int main(void)
 {
   int x = 0;
+  SystemInit();
   PortC_Init();
   while(1) // Turn On and Off the LED
   {
