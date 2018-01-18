@@ -57,12 +57,21 @@ void ADC_ChannelSelect(unsigned int Channel)
 
 void ADCInterruptMode(void)
 {
-	// Intruppt
+	/* Continuous conversion mode
+	 *  -conversion takes place
+	 *   continuously until it is
+	 *   cleared
+	*/
 	ADC1->CFGR1 |= ADC_CFGR1_CONT;
+
+	/* End of conversion interrupt enable
+	 *  -  interrupt is generated when the EOC bit is set
+	*/
 	ADC1->IER |= ADC_IER_EOCIE;
+
 	NVIC_EnableIRQ(ADC1_IRQn);
 	NVIC_SetPriority(ADC1_IRQn,0);
 
-	// Start conversion
+	// ADC start conversion command
 	ADC1->CR |= ADC_CR_ADSTART;
 }

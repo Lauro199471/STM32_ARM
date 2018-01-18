@@ -124,6 +124,12 @@
       <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_smartcard_ex.c" lastModified="16107b25836">
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal.h"/>
       </source>
+      <source file="..\..\..\app\main.c" lastModified="16107c95af0">
+         <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx.h"/>
+         <include file="..\..\..\app\port_initialize.h"/>
+         <include file="..\..\..\app\LCDfunctions.h"/>
+         <include file="..\..\..\app\ADC.h"/>
+      </source>
       <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_conf.h" lastModified="16107b2585b">
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_rcc.h"/>
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_gpio.h"/>
@@ -258,20 +264,20 @@
       <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_can.h" lastModified="16107b25828">
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_def.h"/>
       </source>
-      <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_i2c.c" lastModified="16107b2590c">
+      <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_irda.c" lastModified="16107b2594a">
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal.h"/>
       </source>
-      <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_irda.c" lastModified="16107b2594a">
+      <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_i2c.c" lastModified="16107b2590c">
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_rtc.h" lastModified="16107b25757">
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_def.h"/>
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_rtc_ex.h"/>
       </source>
-      <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_pwr.c" lastModified="16107b25959">
+      <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_can.c" lastModified="16107b25875">
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal.h"/>
       </source>
-      <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_can.c" lastModified="16107b25875">
+      <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_pwr.c" lastModified="16107b25959">
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_tim.h" lastModified="16107b25967">
@@ -281,10 +287,10 @@
       <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_rtc.c" lastModified="16107b25798">
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal.h"/>
       </source>
-      <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_gpio_ex.h" lastModified="16107b258fb">
+      <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_wwdg.h" lastModified="16107b257f6">
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_def.h"/>
       </source>
-      <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_wwdg.h" lastModified="16107b257f6">
+      <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_gpio_ex.h" lastModified="16107b258fb">
          <include file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_def.h"/>
       </source>
       <source file="..\..\..\components\coocox-master\STM32F030x8_CUBELIB\source\stm32f0xx_hal_tim.c" lastModified="16107b25973">
