@@ -23,12 +23,13 @@
 ********************************/
 int main(void)
 {
-  int y = 0, x = 0;
+  int y = 0, x = 1;
   PortA_Init();
   PortB_Init();
   PortC_Init();
-  Init_lcd();
-
+  Init_lcd(); 
+  LCDSetCursorLocation(0,0);
+  /*
   for (y = 0; y <= 1; y=y+1)
   {
     for (x = 0; x <= 15; x=x+1)
@@ -39,5 +40,14 @@ int main(void)
     	LCDSetCursorLocation(x,y);
     	LCDSendAnCharacter(" ");
 	}
+  }
+  */
+  for (int i = -1; i < 128; i = i + 1)
+  {
+    LCDSendAnCommand(0x80);
+    LCDSendaString(" x");
+    LCDSendAnCommand(0x80);
+    LCDOutUDec(i+1);
+    timeDelay(500000);
   }
 }
